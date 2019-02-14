@@ -1,4 +1,53 @@
 - commits:
+    - subject: Allow system messages to not be tracked
+      hash: 6846229a0d77bc349f18cfc4bf7a3aec3318485c
+      body: |
+        Also don't track update lock events
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Cameron Diver <cameron@balena.io>
+        signed-off-by: Cameron Diver <cameron@balena.io>
+      author: Cameron Diver
+    - subject: Format update lock logs with pretty-ms
+      hash: f219dec1e7a8173a0aa2a953820234d2360603ee
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Cameron Diver <cameron@balena.io>
+        signed-off-by: Cameron Diver <cameron@balena.io>
+      author: Cameron Diver
+    - subject: Display update lock notification in dashboard logs
+      hash: bffbe0334913a98dc730c71039e48e6315eb3390
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Cameron Diver <cameron@balena.io>
+        signed-off-by: Cameron Diver <cameron@balena.io>
+      author: Cameron Diver
+    - subject: Show better logs for UpdatesLockedError
+      hash: 7d11435c2534d4aff126d716e030166d61d13da9
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Cameron Diver <cameron@balena.io>
+        signed-off-by: Cameron Diver <cameron@balena.io>
+      author: Cameron Diver
+    - subject: Clear backoff counter on new target state
+      hash: d0399a0eb896a55a3ee0a791f27f4631b9b527a7
+      body: ''
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Cameron Diver <cameron@balena.io>
+        signed-off-by: Cameron Diver <cameron@balena.io>
+      author: Cameron Diver
+  version: 9.8.1
+  date: 2019-02-14T13:26:46.949Z
+- commits:
     - subject: Apply iptables rules to ipv6
       hash: 5f82f6fd3f341adc0659fd7fd7ed6813e4015d7d
       body: ''
