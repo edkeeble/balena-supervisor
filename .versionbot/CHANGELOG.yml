@@ -1,4 +1,20 @@
 - commits:
+    - subject: Only modprobe ip6_tables if it's necessary
+      hash: 7c91fd28f6c85801ac01425bc7f990adc44923c7
+      body: >
+        If the kernel was built with support for ip6tables, there's no need to
+        load the module. This is the case when running
+
+        balenaOS in a container in Mac OS, which also can't do modprobes easily.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Pablo Carranza Velez <pablo@balena.io>
+        signed-off-by: Pablo Carranza Velez <pablo@balena.io>
+      author: Pablo Carranza Velez
+  version: 9.9.1
+  date: 2019-03-08T01:26:26.798Z
+- commits:
     - subject: 'state-engine: Add an exponential backoff for device-config noops'
       hash: 1aa58fd7b94e95a855b31dcb6fca8a374972a47b
       body: |
