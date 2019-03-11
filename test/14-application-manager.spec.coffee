@@ -262,7 +262,7 @@ describe 'ApplicationManager', ->
 					image: @applications.imageForService(target.local.apps[0].services[0])
 					serviceId: 23
 					appId: 1234
-				}])
+				}, { action: 'noop', appId: 1234 }])
 		)
 
 	it 'infers to kill several services as long as there is no unmet dependency', ->
