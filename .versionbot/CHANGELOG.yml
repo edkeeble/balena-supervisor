@@ -1,4 +1,32 @@
 - commits:
+    - subject: 'state-engine: Return a noop when waiting for a dependency'
+      hash: 3f9bce06f00e9a8e7629dfb0875183dcc702de7d
+      body: |
+        We run the risk of the state engine exiting early when a dependency is
+        not ready, especially in local mode. This changes forces a noop to be
+        returned when we are waiting on another service, which is the process
+        used elsewhere in the state engine.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Cameron Diver <cameron@balena.io>
+        signed-off-by: Cameron Diver <cameron@balena.io>
+      author: Cameron Diver
+    - subject: Skip dependency check on kill in local mode
+      hash: fe68dc9d8293227c0f9504d9d61bb3562f4adeb2
+      body: |
+        This function would usually check that an image is present for a
+        dependency, but in local mode the images would have never been inserted
+        into the database.
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Cameron Diver <cameron@balena.io>
+        signed-off-by: Cameron Diver <cameron@balena.io>
+      author: Cameron Diver
+  version: 9.9.2
+  date: 2019-03-11T18:12:26.417Z
+- commits:
     - subject: 'codeowners: Add @CameronDiver, @pcarranzav and @Page-'
       hash: 68a28955ad1b5dc40b8f23c8ed1b998e195bc36d
       body: ''
